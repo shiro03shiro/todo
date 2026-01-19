@@ -14,16 +14,16 @@ class CategoryRequest extends FormRequest
     public function rules()
     {
         return [
-            'content'=>['required', 'string', 'max:10','unique']
+            'name'=>['required', 'string', 'max:10','unique:categories']
         ];
     }
 
     public function messages(){
         return[
-            'content.required'=>'カテゴリを入力してください',
-            'content.string'=>'カテゴリを文字列で入力してください',
-            'content.max'=>'カテゴリを10文字以下で入力してください',
-            'content.unique'=>'カテゴリが既に存在しています',
+            'name.required'=>'カテゴリを入力してください',
+            'name.string'=>'カテゴリを文字列で入力してください',
+            'name.max'=>'カテゴリを10文字以下で入力してください',
+            'name.unique'=>'カテゴリが既に存在しています',
         ];
     }
 }

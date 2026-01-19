@@ -30,8 +30,8 @@
       <input
         class="create-form__item-input"
         type="text"
-        name="content"
-      value="{{ old('content') }}"
+        name="name"
+        value="{{ old('name') }}"
       />
     </div>
     <div class="create-form__button">
@@ -52,8 +52,8 @@
               <input
                 class="update-form__item-input"
                 type="text"
-                name="content"
-                value="{{ $category['content'] }}"
+                name="name"
+                value="{{ $category['name'] }}"
               />
               <input type="hidden" name="id" value="{{ $category['id'] }}" />
             </div>
